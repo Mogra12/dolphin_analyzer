@@ -12,6 +12,6 @@ def layout():
       ░        ░ ░      ░  ░          ░  ░  ░ ░           ░                
 
       This script is designed to analyze the sentiment of a given text using the TextBlob library.
-      Github: github.com/Mogra12                                             
+      Github: github.com/Mogra12/dolphin_analyzer                                           
       """
       print(layout)
