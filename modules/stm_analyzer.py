@@ -1,4 +1,5 @@
 import textblob as tb
+from translate import 
 
 class StmAnalyzer:
       def __init__(self):
@@ -6,6 +7,7 @@ class StmAnalyzer:
       def analyze_sentiment(self,text):
             # Use TextBlob's sentiment analyzer to get the sentiment of the text
             blob = tb.TextBlob(text)
+
             # Correct any spelling mistakes in the text using TextBlob's correct() method
             spelled_text = blob.correct()
             sentiment = spelled_text.sentiment
