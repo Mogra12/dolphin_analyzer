@@ -57,7 +57,6 @@ class StmAnalyzer:
                 case polarity if 0.7 < polarity <= 1:
                     sentiment_return = f"{Fore.GREEN}Extremely Positive ★★★★★★"
 
-            # Atribuindo o sentimento à variável da instância antes de retornar
             self.sentiment_returned = sentiment_return
 
             return sentiment_return
