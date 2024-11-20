@@ -27,4 +27,4 @@ Antes de rodar o programa, certifique-se de que as seguintes bibliotecas Python 
 Você pode instalar as dependências usando o `pip`:
 
 ```bash
-pip install deep-translator textblob colorama
+pip install deep-translator textblob colorama fpdf langdetect
