@@ -14,6 +14,7 @@ class App:
         langdetection = LangDetection()
         try:
             while True:
+                # shows app interface
                 layout()
                 choose = int(input(f"{Fore.CYAN}➤ "))
                 if choose == 1:
@@ -36,19 +37,20 @@ class App:
                     log()
 
                 elif choose == 2:
+                    # json converter
                     with open('data/database/database.json', 'r') as f:
                         json_data = load(f)
                     json_to_pdf(json_data, 'log_db.pdf')
                     print(f"{Fore.LIGHTGREEN_EX}\nLog saved as log_db.pdf!")
+
                 elif choose == 0:
+                    # exit
                     print("Exiting the program...")
                     break
-
         except KeyboardInterrupt:
             print("\tProgram interrupted by user.")
-        except Exception:
-            print(f"An error occurred")
-
+        except Exception as e:
+            print(f"Error: {e}")
 
 if "__main__" == __name__:
     app = App()

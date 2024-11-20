@@ -1,6 +1,5 @@
 from colorama import Fore
 
-
 def layout():
     # Define the layout for the sentiment analysis application
     layout = f"""
