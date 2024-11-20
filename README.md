@@ -21,6 +21,8 @@ Antes de rodar o programa, certifique-se de que as seguintes bibliotecas Python 
 - `deep-translator`
 - `textblob`
 - `colorama`
+- `langdetect`
+- `FPDF`
 
 Você pode instalar as dependências usando o `pip`:
 
