@@ -46,8 +46,8 @@ class App:
 
         except KeyboardInterrupt:
             print("\tProgram interrupted by user.")
-        #except Exception:
-        #    print(f"An error occurred")
+        except Exception:
+            print(f"An error occurred")
 
 
 if "__main__" == __name__:
